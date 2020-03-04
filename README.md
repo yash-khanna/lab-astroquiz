@@ -64,7 +64,7 @@ And finally, create a pull request so your ProGrad Mentor (PM) can review your w
 
 ## Progression - 2
 1. ***Create an Abstract class BasicEligibility in the utility package***
-2. ***Create an abstract method - abstract boolean basicEligibilityCheck(User user)***
+2. ***Create an abstract method - abstract boolean basicEligibilityCheck(User user,String answers)***
 
 ## Progression - 3
 1. ***Create an interface EligibilityInterface in the utility package***
@@ -86,5 +86,11 @@ And finally, create a pull request so your ProGrad Mentor (PM) can review your w
 1. ***checkQuiz(String answers) method is used to check whether the candidate has cleared the assessment or not.***
 2. ***A candidate clears the test only if he scores more than 80.***
 3. ***Return true if he scores more than 80 else false.***
+
+## Progression - 7
+1. ***Create an object for the User class and pass the input arguments to the contructor.***
+2. ***Create an object for the EligibilityCheck class.***
+3. ***Call the basicEligibilityCheck(user,answers) method with the object created.***
+4. ***Store the return value in a boolean variable spaceEligible.***
 
 Happy Coding ProGrad ❤️
