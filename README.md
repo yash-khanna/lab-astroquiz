@@ -1,10 +1,20 @@
 ![Image description](https://i1.faceprep.in/ProGrad/face-logo-resized.png)
 
-# ProGrad Lab | Astrozone
+# ProGrad Lab | Star Force Enterprise
 
 ## A Quick Introduction
 
+Space is Amazing! Isn't it?
 
+The sheer vastness of it, along with the trillions upon trillions of objects in the many billion galaxies of the universe is almost incomprehensible to the human brain. But sadly, majority of us have not had the opportunity to explore the beyond. 
+
+Not the case any more.
+
+You don’t need to be a superman or superwoman to fly into space! The FACE Space Force Enterprise has announced the creation of a revolutionary space research agency called the Star Force Enterprise.
+
+As a ProGrad, you get an opportunity to get into space (Conditions Apply).
+
+Wondering what those conditions are? You gotta help us with the below implementation to grab this opportunity.
 
 ## What should you do
 ```
@@ -30,15 +40,15 @@ And finally, create a pull request so your ProGrad Mentor (PM) can review your w
 2. ***Edit the code as per the instructions.***
 3. ***Go to Java Resources -> src folder.***
 4. ***You will have 3 packages src/controller, src/utility, src/model.***
-5. ***Once the progressions are completed follow the instructions to run the application and test your code.***
+5. ***Once the progressions are completed, follow the instructions to run the application and test your code.***
  
 ## Run the Project
-1. ***Right - click on the project.***
+1. ***Right click on the project.***
 2. ***Go to Run as -> Run on server.***
 3. ***You can check the output in eclipse browser or in your browser.***
 
 ## Input Format
-1. ***There are 7 arugments as input to this application.***
+1. ***There are 7 arugments given as input to this application.***
 2. ***First input is a String which is the name.***
 3. ***Second input is a String which corresponds to number.***
 4. ***Third input is an int which corresponds to the age.***
@@ -60,20 +70,20 @@ And finally, create a pull request so your ProGrad Mentor (PM) can review your w
    - ***private int weight***
    - ***private String country***
 2. ***Generate appropriate getters and setters.***
-3. ***Generate the constructor User(String name, String number, int age, int height, int weight, String country) inside the User class.***
+3. ***Generate the constructor User (String name, String number, int age, int height, int weight, String country) inside the User class.***
 
 ## Progression - 2
 1. ***Create an Abstract class BasicEligibility in the utility package***
-2. ***Create an abstract method - abstract boolean basicEligibilityCheck(User user,String answers)***
+2. ***Create an abstract method - abstract boolean basicEligibilityCheck (User user, String answers)***
 
 ## Progression - 3
 1. ***Create an interface EligibilityInterface in the utility package***
-2. ***Create a method in interface - boolean checkUser(User user)***
-3. ***Create a method in interface - boolean checkQuizAnswer(String answers)***
+2. ***Create a method in interface - boolean checkUser (User user)***
+3. ***Create a method in interface - boolean checkQuizAnswer (String answers)***
 
 ## Progression - 4
 1. ***Create a class called EligibilityCheck which extends the abstract class BasicEligibility and implements EligibilityInterface***
-2. ***Implement the method basicEligibilityCheck(User user)***
+2. ***Implement the method basicEligibilityCheck (User user)***
 3. ***The basicEligibilityCheck method should in turn invoke 2 methods checkUser(User user) ana checkQuizAnswers(String answers)***
 4. ***Return true if the candidate is eligible for space journey, return false otherwise.***
 
