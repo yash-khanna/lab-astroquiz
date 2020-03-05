@@ -81,7 +81,7 @@ And finally, create a pull request so your ProGrad Mentor (PM) can review your w
 ## Progression - 4
 1. ***Create a class called EligibilityCheck which extends the abstract class BasicEligibility and implements EligibilityInterface***
 2. ***Implement the method basicEligibilityCheck (User user)***
-3. ***The basicEligibilityCheck method should in turn invoke 2 methods checkUser(User user) ana checkQuizAnswers(String points)***
+3. ***The basicEligibilityCheck method should in turn invoke checkUser(User user)***
 4. ***Return true if the candidate is eligible for space journey, return false otherwise.***
 
 ## Progression - 5
