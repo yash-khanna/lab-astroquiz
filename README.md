@@ -93,6 +93,7 @@ And finally, create a pull request so your ProGrad Mentor (PM) can review your w
 1. ***checkQuiz(String points) method is used to check whether the candidate has cleared the assessment or not.***
 2. ***A candidate clears the test only if he scores more than 80.***
 3. ***Return true if he scores more than 80 else false.***
+4. ***Convert the String to an Integer.***
 
 ## Progression - 7
 1. ***Create an object for the User class and pass the input arguments to the contructor.***
