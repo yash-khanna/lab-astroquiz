@@ -15,25 +15,15 @@ import utility.EligibiltyCheck;
 public class Eligibility extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	
-	
-	/*
-	 * 
-	 * protected void doGet(HttpServletRequest request, HttpServletResponse
-	 * response) throws ServletException, IOException {
-	 * 
-	 * RequestDispatcher
-	 * rd=this.getServletContext().getRequestDispatcher("/WEB-INF/views/quiz.jsp");
-	 * rd.forward(request, response); }
-	 * 
-	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
 	String points=request.getParameter("points");
 	
-	EligibiltyCheck eligible=new EligibiltyCheck();
-	boolean spaceEligible=eligible.checkQuizAnswer(points);
-	System.out.println("Take the quiz");
-	System.out.println(spaceEligible);
+	// Create an object for EligibiltyCheck
+	// Call the checkQuizAnswer method and pass the argument as points.
+	// Store the return value in a variable called spaceEligible.
+		
+	
 	if(false)
 	{
 		RequestDispatcher rd=this.getServletContext().getRequestDispatcher("/WEB-INF/views/success.html");
