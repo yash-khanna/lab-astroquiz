@@ -32,7 +32,7 @@ let questions = [
 	      "Bennu",
 	      "2 Pallas"
 	    ]
-	  },
+	 },
 	  {
 	    id: 4,
 	    question: " What year were the first astronauts selected?",
@@ -86,7 +86,7 @@ let questions = [
 	      "Direction",
 	      "Temperature",
 	      "Distance"
-	    ]
+	    ] 
 	  }
 ]
 
@@ -108,14 +108,17 @@ function next() {
   {
     sessionStorage.setItem("time", time);
     clearInterval(mytime);
-    location.href = "Successfull.html";
-  }
+    document.getElementById("Next").style.display = "none";
+    document.getElementById("save").style.visibility = "visible";
+
+  }  
   console.log(question_count);
 
   let user_answer = document.querySelector("li.option.active").innerHTML;
   // check the answer is right or wrong
   if (user_answer == questions[question_count].answer) {
     points += 10;
+    document.getElementById("myInput").value = points;
     sessionStorage.setItem("points", points);
   }
   else{
@@ -127,7 +130,6 @@ function next() {
   question_count++;
   show(question_count);
 }
-
 function show(count) {
   let question = document.getElementById("questions");
   let [first, second, third, fourth] = questions[count].options;

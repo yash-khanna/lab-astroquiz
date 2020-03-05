@@ -15,8 +15,7 @@ import utility.EligibiltyCheck;
 @WebServlet(urlPatterns= {"/eligible"})
 public class EligibilityViewController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
-
+      
     public EligibilityViewController() {
         super();
        
@@ -25,7 +24,7 @@ public class EligibilityViewController extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-		RequestDispatcher rd=this.getServletContext().getRequestDispatcher("/index.jsp");
+		RequestDispatcher rd=this.getServletContext().getRequestDispatcher("/WEB-INF/views/index.jsp");
 		rd.forward(request, response);
 	}
 
@@ -39,6 +38,7 @@ public class EligibilityViewController extends HttpServlet {
 		int weight=Integer.parseInt(request.getParameter("weight"));
 		String country=request.getParameter("country");
 		
+	
 		User user = new User(name,number,age,height,weight,country);
 		user.setName(name);
 		user.setNumber(number);
@@ -49,10 +49,10 @@ public class EligibilityViewController extends HttpServlet {
 		
 		BasicEligibility eligible=new EligibiltyCheck();
 		boolean spaceEligible = eligible.basicEligibilityCheck(user);
-		
+		System.out.println(spaceEligible);
 			if(spaceEligible)
 			{
-				RequestDispatcher rd=this.getServletContext().getRequestDispatcher("/quiz.jsp");
+				RequestDispatcher rd=this.getServletContext().getRequestDispatcher("/WEB-INF/views/quiz.jsp");
 				rd.forward(request, response);	
 			}
 			else
