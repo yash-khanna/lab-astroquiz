@@ -48,14 +48,11 @@ And finally, create a pull request so your ProGrad Mentor (PM) can review your w
 3. ***You can check the output in eclipse browser or in your browser.***
 
 ## Input Format
-1. ***There are 7 arugments given as input to this application.***
-2. ***First input is a String which is the name.***
-3. ***Second input is a String which corresponds to number.***
-4. ***Third input is an int which corresponds to the age.***
-5. ***Fourth input is an integer which corresponds to the height.***
-6. ***Fifth input is an integer which corresponds to the weight.***
-7. ***Sixth input is a String which corresponds to the Country.***
-8. ***Seventh input is a String which contains the answers.***
+1. ***There are 2 sets of inputs to this application.***
+2. ***First set of inputs are user details - name, number, age, height, weight and country.***
+3. ***Second set of input is the total of the all the answers to the quiz.***
+4. ***The quiz answer is a number which of type String.***
+
 
 ## Output Format
 1 ***Output is a boolean value true or false.***
@@ -74,17 +71,17 @@ And finally, create a pull request so your ProGrad Mentor (PM) can review your w
 
 ## Progression - 2
 1. ***Create an Abstract class BasicEligibility in the utility package***
-2. ***Create an abstract method - abstract boolean basicEligibilityCheck (User user, String answers)***
+2. ***Create an abstract method - abstract boolean basicEligibilityCheck (User user)***
 
 ## Progression - 3
 1. ***Create an interface EligibilityInterface in the utility package***
 2. ***Create a method in interface - boolean checkUser (User user)***
-3. ***Create a method in interface - boolean checkQuizAnswer (String answers)***
+3. ***Create a method in interface - boolean checkQuizAnswer (String points)***
 
 ## Progression - 4
 1. ***Create a class called EligibilityCheck which extends the abstract class BasicEligibility and implements EligibilityInterface***
 2. ***Implement the method basicEligibilityCheck (User user)***
-3. ***The basicEligibilityCheck method should in turn invoke 2 methods checkUser(User user) ana checkQuizAnswers(String answers)***
+3. ***The basicEligibilityCheck method should in turn invoke 2 methods checkUser(User user) ana checkQuizAnswers(String points)***
 4. ***Return true if the candidate is eligible for space journey, return false otherwise.***
 
 ## Progression - 5
@@ -93,14 +90,18 @@ And finally, create a pull request so your ProGrad Mentor (PM) can review your w
 3. ***Return true if the person is eligible and return false otherwise.***
 
 ## Progression - 6
-1. ***checkQuiz(String answers) method is used to check whether the candidate has cleared the assessment or not.***
+1. ***checkQuiz(String points) method is used to check whether the candidate has cleared the assessment or not.***
 2. ***A candidate clears the test only if he scores more than 80.***
 3. ***Return true if he scores more than 80 else false.***
 
 ## Progression - 7
 1. ***Create an object for the User class and pass the input arguments to the contructor.***
-2. ***Create an object for the EligibilityCheck class.***
-3. ***Call the basicEligibilityCheck(user,answers) method with the object created.***
+2. ***Create an object for the EligibilityCheck class in EligibilityViewController.***
+3. ***Call the basicEligibilityCheck(user) method with the object created.***
 4. ***Store the return value in a boolean variable spaceEligible.***
+5. ***Create an object for the EligibilityCheck class in Eligibility.***
+3. ***Call the checkQuizAnswers(String points) method with the object created.***
+4. ***Store the return value in a boolean variable spaceEligible.***
+
 
 Happy Coding ProGrad ❤️
