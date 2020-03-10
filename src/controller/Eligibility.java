@@ -19,11 +19,6 @@ public class Eligibility extends HttpServlet {
 
 	String points=request.getParameter("points");
 	
-	// Create an object for EligibiltyCheck
-	// Call the checkQuizAnswer method and pass the argument as points.
-	// Store the return value in a variable called spaceEligible.
-		
-	
 	if(false)
 	{
 		RequestDispatcher rd=this.getServletContext().getRequestDispatcher("/WEB-INF/views/success.html");
