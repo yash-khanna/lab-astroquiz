@@ -40,13 +40,8 @@
             <input type="submit" value="Submit" id="save" form="myform" name="s1" style="visibility: hidden;"> 
         </div>
     </footer>
-    <!-- site.js -->
     <script src="js/site.js"></script>
-
-      <!-- user info -->
       <script src="js/userInfo.js"></script>
-
-     <!-- timer -->
      <script src="js/timer.js"></script>
   </body>
 </html>
